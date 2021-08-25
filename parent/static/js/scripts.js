@@ -53,25 +53,3 @@ const receiveMessage = (event) => {
   }
 };
 window.addEventListener("message", receiveMessage, false);
-
-
-
-/**
- * CUSTOM EVENT FROM IFRAME
- */
-const heardCustomEvent = () => {
-  const action = e.detail.action
-  if (action === "add a text") {
-    const existingMessage = document.getElementById("deleteWhenNewOne");
-    existingMessage && existingMessage.remove();
-    const ul = document.querySelector(".menu");
-    const li = document.createElement("li");
-    li.setAttribute("id", "deleteWhenNewOne");
-    const text = document.createTextNode(
-      "Custom event by click in Iframe worked!"
-    );
-    li.appendChild(text);
-    ul.appendChild(li);
-  } 
-}
-window.addEventListener('custom_event', heardCustomEvent, false);

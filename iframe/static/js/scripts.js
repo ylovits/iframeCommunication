@@ -24,10 +24,3 @@ const receiveMessage = (event) => {
 };
 window.addEventListener("message", receiveMessage, false);
 
-/**
- * CUSTOM EVENT TO PARENT
- */
- const checkCustomEvent = () => {
-  const customEvent = new CustomEvent('custom_event', { detail: { action: 'add a text' } });
-  window.parent.dispatchEvent(customEvent);
-};
