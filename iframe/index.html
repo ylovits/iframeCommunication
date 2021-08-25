@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Iframe</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <ul class="menu">
+          <li>
+            <a onclick="startLoading()" href="/">Home</a>
+          </li>
+          <li>
+            <a onclick="startLoading()" href="/page2">Page2</a>
+          </li>
+          <li>
+            <a onclick="startLoading()" href="/page3">Page3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="titlebox">
+      <h1>HOMEPAGE</h1>
+      <button onclick="checkParentMessaging()">Test Messaging to parent</button>
+      <button onclick="checkCustomEvent()">Test custom event to parent</button>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

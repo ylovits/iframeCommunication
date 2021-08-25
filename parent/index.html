@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Parent</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <nav>
+      <div>
+        <ul class="menu">
+          <li>
+            <button onclick="goToHome()">Home</button>
+          </li>
+          <li>
+            <button onclick="goToPage2()">Page2</button>
+          </li>
+          <li>
+            <button onclick="goToPage3()">Page3</button>
+          </li>
+          <li>
+            <button onclick="testIframeMessagingFunction()">
+              Test message to iframe
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <iframe id="iframe" src="http://localhost:3000" class="iframe"></iframe>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

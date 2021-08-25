@@ -1,0 +1,26 @@
+body {
+  background: rgb(196, 168, 154);
+}
+.menu {
+  background: #c40;
+  list-style: none;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  height: 1.4rem;
+}
+.menu > li {
+  display: inline-block;
+}
+.iframe {
+  width: calc(100% - 6rem);
+  height: calc(100% - 11rem);
+  margin: 3rem;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 255, 0.3);
+}
